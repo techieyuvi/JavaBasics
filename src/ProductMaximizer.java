@@ -6,18 +6,19 @@ public class ProductMaximizer {
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the size of the Array");
         int n = input.nextInt();
-        int[] arr = new int[n];
-
-        System.out.println("Enter the elements:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = input.nextInt();
-        }
-        input.close();
+        int[] arr = new int[n];                         //Creating a array with user input which is n
 
         if(n < 2){
             System.out.println("Array should have at least 2 numbers.");
             return;
         }
+
+        System.out.println("Enter the elements:");      //inserting all the numbers in array that user enters
+        for (int i = 0; i < n; i++) {
+            arr[i] = input.nextInt();
+        }
+        input.close();
+
 
         int max1 = Integer.MIN_VALUE ; int max2 = Integer.MIN_VALUE;
         int min1 = Integer.MAX_VALUE ; int min2 = Integer.MAX_VALUE;
@@ -30,7 +31,7 @@ public class ProductMaximizer {
                 max2 = num;
             }
 
-            if( num > min1){
+            if( num < min1){
                 min2 = min1;
                 min1 = num;
             }else if ( num < min2){
