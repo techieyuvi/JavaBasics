@@ -4,6 +4,8 @@ public class TwoSumArray {
 
     public static int[] sumPairs(int[] arr, int n){
 
+        // creating a hashmap to check if the key is already present
+
         HashMap<Integer,Integer> map = new HashMap<>();
 
         for (int i = 0; i < arr.length; i++) {
