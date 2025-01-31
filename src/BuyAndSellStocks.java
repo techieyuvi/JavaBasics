@@ -24,7 +24,7 @@ public class BuyAndSellStocks {
         int res = 0;
 
         for (int i = 0; i < arr.length; i++) {
-            minSoFar = Math.min(minSoFar,i);
+            minSoFar = Math.min(minSoFar,arr[i]);
 
             res =Math.max(res,arr[i] - minSoFar);
         }
@@ -33,12 +33,10 @@ public class BuyAndSellStocks {
 
     public static void main(String[] args) {
 
-        int[] priceOfStocks= {2,4,8,1,5,6};
+        int[] priceOfStocks= {7, 10, 1, 3, 6, 9, 2};
 
         int profit = profitFinder(priceOfStocks);
 
         System.out.println(profit);
     }
-
-
 }
