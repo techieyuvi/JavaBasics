@@ -16,8 +16,6 @@
 
 //NOTE : USE BINARY SEARCH FOR O(log n) TIME COMPLEXITY
 
-import java.util.Arrays;
-import java.util.Scanner;
 
 public class MinimumOfSortedRotatedArray {
 
